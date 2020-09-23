@@ -6,6 +6,7 @@ body{
     line-height: 1.5;
     background: url(pexels-tirachard-kumtanom-733854.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
 }  
@@ -17,7 +18,7 @@ body{
 }
 
 header{
-    background-color: rgba(0, 0, 0, 0.575);
+    /* background-color: rgba(0, 0, 0, 0.575); */
     padding: 15px;
     min-height: 65px;
     border-bottom:black solid 3px;
@@ -49,12 +50,13 @@ header ul{
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 4fr);
 }
 header li{
     padding: 0 15px 0 15px;
     display: block;
     text-decoration: none;
+    font-weight: bold;
 }
 
 header nav{
@@ -78,16 +80,21 @@ header ul li a:hover{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
     color: orangered;
     font-style: italic;
+    height: 200px;
+	width: 100%;
+	/* background-color: rgba(0, 0, 0, 0.575); */
+	position: absolute;
 }
 
 #main h1{
     margin: 0;
     font-size: 50px;
     text-align: center;
+    
     
 }
 
@@ -97,10 +104,11 @@ header ul li a:hover{
 }
 
 .over-lay{
-    background-color: rgba(0, 0, 0, 0.575);
+    /* background-color: rgba(0, 0, 0, 0.575); */
     height: 100%;
     width: 100%;
-  }
+    
+}
 
 .container-body{
     text-align: center;
@@ -152,19 +160,23 @@ header ul li a:hover{
 span{
     color: orangered;
 }
-#main .social-icon{
+/* #main .social-icon{
     display: inline-flexbox;
     position: absolute;
-  }
+  } */
 .social-icon{
     text-align: center;
-    width: 100%;    
+    width: 100%;
+    position: absolute;
+    display: inline-flexbox;
+	
 }
 .social-icon .fa{
     color: white;
      margin: 10px 5px;
      font-size: 3em !important;
      cursor: pointer;
+     
 }
 
 .social-icon .fa:hover{
@@ -285,7 +297,13 @@ span{
       text-align: center;
       font-size: 50px;
  }
-  #Projects{
+ img{
+    width: 200px;
+    padding-top: 50px;
+    padding-right: 30px;
+    text-align: center;
+  }
+#Projects{
       margin: 0;
       padding: 0;
   }
