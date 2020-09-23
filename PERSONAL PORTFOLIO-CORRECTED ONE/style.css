@@ -17,7 +17,7 @@ body{
 }
 
 header{
-    /* background: rgb(51, 51, 240); */
+    background-color: rgba(0, 0, 0, 0.575);
     padding: 15px;
     min-height: 65px;
     border-bottom:black solid 3px;
@@ -73,7 +73,8 @@ header ul li a:hover{
     font-weight: bolder;
 }
 
-.main{
+
+#main{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -92,24 +93,15 @@ header ul li a:hover{
 
 #main p{
     font-size: 20px;
-    font-weight: bolder;
-    
+    font-weight: bolder;   
 }
 
-.main-body{
-    margin: 0;
-    padding: 0;
-    
-}
+.over-lay{
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 100%;
+    width: 100%;
+  }
 
-.main-body h1{
-    color: orangered;
-}
-
-.main-body p{
-    color: orangered;
-    font-weight: bold; 
-}
 .container-body{
     text-align: center;
     font-size: 20px;
@@ -122,7 +114,7 @@ header ul li a:hover{
 }
 .container-body p{
     font-style: italic;
-    color: darkslategray;
+    color: orangered;
     font-weight: bold;
 }
 
@@ -160,40 +152,25 @@ header ul li a:hover{
 span{
     color: orangered;
 }
-
+#main .social-icon{
+    display: inline-flexbox;
+    position: absolute;
+  }
 .social-icon{
-    text-align: left;
+    text-align: center;
     width: 100%;    
 }
-
-.social-network{
-    width: 800px;
-    text-align: center;
-    padding-top: 20%;
-    bottom: 150px;
-    position: relative; 
-
-}
-
-.social-network .fa{
-    margin-left: 10px;
-    display: inline-block;
-    padding: 8px;
-    cursor: pointer;
-    border: 5px solid orangered;
-    border-bottom: 80%;   
-    /* margin-left: 10px;
-    display: inline-block;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 80%;
-    font-size: 40px;        */
-}
-.social-network .fa:hover{
+.social-icon .fa{
     color: white;
+     margin: 10px 5px;
+     font-size: 3em !important;
+     cursor: pointer;
 }
 
+.social-icon .fa:hover{
+    color: orangered;
 
+}
 .wrapper{
     position: absolute;
     top: 65%;
